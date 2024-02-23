@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fibank_Mobile_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fibank-background" translatesAutoresizingMaskIntoConstraints="NO" id="Bus-dS-1sQ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="khl-xT-EGD">
+                                <rect key="frame" x="0.0" y="262.33333333333337" width="393" height="327.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fibank-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-Su-ByD">
+                                        <rect key="frame" x="71.666666666666686" y="0.0" width="250" height="134"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Dmh-kA-60D"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="coF-bp-gzG">
+                                        <rect key="frame" x="29" y="198" width="335.33333333333331" height="129.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="1sI-IU-uyk">
+                                                <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="129.33333333333334"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmF-dR-Bv0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="48.666666666666664"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="rectangle.portrait.and.arrow.right" catalog="system" title="Тарифа" imagePadding="7" cornerStyle="large">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                            <color key="baseBackgroundColor" red="0.094117648900000003" green="0.23921570180000001" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="tariffButtonBg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="er9-Zx-1vK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYa-r2-ddp">
+                                                        <rect key="frame" x="0.0" y="80.666666666666686" width="159.66666666666666" height="48.666666666666657"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="titleShadowOffset" width="22" height="0.0"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" imagePlacement="leading" title="Бюлетин за лихвите" imagePadding="7" cornerStyle="large" titleAlignment="automatic">
+                                                            <imageReference key="image" image="percent" catalog="system" symbolScale="medium"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="fibank-blue-color"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="bulletinButtonBg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9h-jB-S7N"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="ahS-Ra-I8n">
+                                                <rect key="frame" x="175.66666666666669" y="0.0" width="159.66666666666669" height="129.33333333333334"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opM-9B-YF4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="159.66666666666666" height="48.666666666666664"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="rectangle.portrait.and.arrow.right" catalog="system" title="Tariff" imagePadding="7" cornerStyle="large">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="semibold"/>
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                            <color key="baseBackgroundColor" red="0.094117648900000003" green="0.23921570180000001" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="tariffButtonEn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mp4-Yf-G5g"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UE-v5-ZrI">
+                                                        <rect key="frame" x="0.0" y="80.666666666666686" width="159.66666666666666" height="48.666666666666657"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="titleShadowOffset" width="22" height="0.0"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" imagePlacement="leading" title="Interest Bulletin " imagePadding="7" cornerStyle="large" titleAlignment="automatic">
+                                                            <imageReference key="image" image="percent" catalog="system" symbolScale="medium" variableValue="0.0"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                            <color key="baseForegroundColor" name="fibank-blue-color"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="bulletinButtonEn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAr-vl-wxi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bus-dS-1sQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="07J-Lv-tbK"/>
+                            <constraint firstItem="khl-xT-EGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KaA-z9-vWu"/>
+                            <constraint firstItem="khl-xT-EGD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VGe-3R-uXS"/>
+                            <constraint firstAttribute="trailing" secondItem="khl-xT-EGD" secondAttribute="trailing" id="Zaw-9C-CNU"/>
+                            <constraint firstItem="khl-xT-EGD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="etI-0Y-gb7"/>
+                            <constraint firstItem="Bus-dS-1sQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="pLq-5X-5pz"/>
+                            <constraint firstAttribute="bottom" secondItem="Bus-dS-1sQ" secondAttribute="bottom" id="rBH-oV-DGv"/>
+                            <constraint firstItem="Bus-dS-1sQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ra8-Zl-4T6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="M2V-64-IUs" kind="show" identifier="tariffBgDocument" id="eJj-Lq-l37"/>
+                        <segue destination="1YU-Vh-2AO" kind="show" identifier="tariffEnDocument" id="88q-WS-NeM"/>
+                        <segue destination="yPc-3t-OXE" kind="show" identifier="bulletinBgDocument" id="9LS-Yg-HSw"/>
+                        <segue destination="nho-xa-nb1" kind="show" identifier="bulletinEnDocument" id="dtt-Tp-bet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="-4.2253521126760569"/>
+        </scene>
+        <!--Tariff En View Controller-->
+        <scene sceneID="hy3-wu-dEY">
+            <objects>
+                <viewController id="1YU-Vh-2AO" customClass="TariffEnViewController" customModule="Fibank_Mobile_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eeQ-mM-sfm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-3J-WjG">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kmB-8x-VGq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kmB-8x-VGq" firstAttribute="trailing" secondItem="cIP-3J-WjG" secondAttribute="trailing" id="5NL-Uw-2b2"/>
+                            <constraint firstItem="cIP-3J-WjG" firstAttribute="leading" secondItem="kmB-8x-VGq" secondAttribute="leading" id="6VP-dN-n7j"/>
+                            <constraint firstItem="kmB-8x-VGq" firstAttribute="bottom" secondItem="cIP-3J-WjG" secondAttribute="bottom" id="iDQ-xL-tYh"/>
+                            <constraint firstItem="cIP-3J-WjG" firstAttribute="top" secondItem="kmB-8x-VGq" secondAttribute="top" id="wXw-gt-GEo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K73-9A-5I6"/>
+                    <connections>
+                        <outlet property="pdfTariffEnView" destination="cIP-3J-WjG" id="8bv-Oo-Dwh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NvI-a2-D8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="-464"/>
+        </scene>
+        <!--Bulletin En View Controller-->
+        <scene sceneID="xpp-9A-aBp">
+            <objects>
+                <viewController id="nho-xa-nb1" customClass="BulletinEnViewController" customModule="Fibank_Mobile_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8eq-vO-tc9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-M0-VX6">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4GR-oI-gvQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aGc-M0-VX6" firstAttribute="leading" secondItem="4GR-oI-gvQ" secondAttribute="leading" id="2bp-k9-3py"/>
+                            <constraint firstItem="4GR-oI-gvQ" firstAttribute="trailing" secondItem="aGc-M0-VX6" secondAttribute="trailing" id="ID4-ns-KpS"/>
+                            <constraint firstItem="aGc-M0-VX6" firstAttribute="top" secondItem="4GR-oI-gvQ" secondAttribute="top" id="lxr-ek-7Oe"/>
+                            <constraint firstItem="4GR-oI-gvQ" firstAttribute="bottom" secondItem="aGc-M0-VX6" secondAttribute="bottom" id="ybx-UL-bzA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8KD-cP-jmq"/>
+                    <connections>
+                        <outlet property="pdfBulletinEnView" destination="aGc-M0-VX6" id="jdG-U5-ah0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Btn-vR-2I2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="715"/>
+        </scene>
+        <!--Bulletin Bg View Controller-->
+        <scene sceneID="Xns-CV-gko">
+            <objects>
+                <viewController id="yPc-3t-OXE" customClass="BulletinBgViewController" customModule="Fibank_Mobile_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UVK-0f-Bhz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBX-DJ-Vb2">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="07k-Uz-abE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="07k-Uz-abE" firstAttribute="trailing" secondItem="eBX-DJ-Vb2" secondAttribute="trailing" id="5gh-TE-aNp"/>
+                            <constraint firstItem="eBX-DJ-Vb2" firstAttribute="top" secondItem="07k-Uz-abE" secondAttribute="top" id="bRd-l2-e3g"/>
+                            <constraint firstItem="07k-Uz-abE" firstAttribute="bottom" secondItem="eBX-DJ-Vb2" secondAttribute="bottom" id="hxU-F0-Lq8"/>
+                            <constraint firstItem="eBX-DJ-Vb2" firstAttribute="leading" secondItem="07k-Uz-abE" secondAttribute="leading" id="pT2-55-j76"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iog-g8-sXL"/>
+                    <connections>
+                        <outlet property="pdfBulletinBgView" destination="eBX-DJ-Vb2" id="ujr-Dm-g5L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XdP-xX-yUe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="196"/>
+        </scene>
+        <!--Tariff Bg View Controller-->
+        <scene sceneID="VKy-NB-kgL">
+            <objects>
+                <viewController id="M2V-64-IUs" customClass="TariffBgViewController" customModule="Fibank_Mobile_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G3Y-2d-yZh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqj-gV-wtb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9IG-Lo-NcH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9IG-Lo-NcH" firstAttribute="trailing" secondItem="lqj-gV-wtb" secondAttribute="trailing" id="1OC-at-KR5"/>
+                            <constraint firstItem="lqj-gV-wtb" firstAttribute="top" secondItem="9IG-Lo-NcH" secondAttribute="top" id="9uO-SB-gTV"/>
+                            <constraint firstItem="9IG-Lo-NcH" firstAttribute="bottom" secondItem="lqj-gV-wtb" secondAttribute="bottom" id="XyM-jh-e05"/>
+                            <constraint firstItem="lqj-gV-wtb" firstAttribute="leading" secondItem="9IG-Lo-NcH" secondAttribute="leading" id="z3N-YK-W1z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sw2-Cg-xtd"/>
+                    <connections>
+                        <outlet property="pdfTariffBgView" destination="lqj-gV-wtb" id="wGl-UD-xa1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQH-HN-Krq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="-965"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fibank-background" width="5001" height="3334"/>
+        <image name="fibank-logo" width="550" height="134"/>
+        <image name="percent" catalog="system" width="128" height="121"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
+        <namedColor name="fibank-blue-color">
+            <color red="0.094117648900000003" green="0.23921570180000001" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
